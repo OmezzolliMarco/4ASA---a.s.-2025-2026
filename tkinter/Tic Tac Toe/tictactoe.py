@@ -1,6 +1,13 @@
 import tkinter as tk
 
 #main
+#definizione elementi del gioco
+bottoni = []
+for i in range(0,3):
+    bottoni.append([0,1,2])
+
+bottoni = [[None for i in range(3)] for j in range(3)]
+
 root = tk.Tk()
 root.geometry("600x400")
 root.title("Tic Tac Toe")
